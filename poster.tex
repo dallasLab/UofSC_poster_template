@@ -1,0 +1,196 @@
+\documentclass[final,hyperref={pdfpagelabels=false}]{beamer}
+
+\usetheme{uofsc}
+\usepackage[orientation=portrait,size=a0,scale=1.4]{beamerposter} 
+\usepackage[english]{babel} 
+\usepackage{amsmath,amsthm,amssymb,latexsym}
+
+\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+\usepackage{fontspec}
+\setmainfont{Ubuntu}
+
+\usepackage{booktabs} 
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\usepackage{enumitem}
+\newlist{itz}{itemize}{1}
+\setlist[itz]{font=\color{uscRed}}
+
+
+\newcommand*{\img}[1]{%
+    \raisebox{-.1\baselineskip}{%
+        \includegraphics[
+        height=\baselineskip,
+        keepaspectratio,
+        ]{#1}%
+    }%
+}
+
+
+
+\usecaptiontemplate{\small\structure{\insertcaptionname~\insertcaptionnumber: }\insertcaption} 
+\boldmath 
+
+
+\title{\huge Title of poster} 
+\author{Authors}
+\institute{$^{1}$ \ University of South Carolina, Biological Sciences \\ $^{2}$ \ other uni, other affil}
+
+
+
+% footer text
+\newcommand{\leftfoot}{} 
+\newcommand{\rightfoot}{} 
+
+
+\begin{document}
+
+\begin{frame}[t] 
+
+\begin{columns}[t] 
+
+\begin{column}{0.02\textwidth}
+
+\vspace{50cm}
+\hspace{1.25cm}
+\begin{rotate}{90}
+    {\Large \faEnvelope} \ \ \  email@gmail.com \ \ \ \textcolor{uscRed}{$\vert$} \ \ \  
+    {\Large \faDesktop}  \ \ \  website link \ \ \ \textcolor{uscRed}{$\vert$} \ \ \
+    {\LARGE \faGithubAlt}   \ \ \  github account 
+\end{rotate}	
+
+\end{column}
+
+
+
+
+
+\begin{column}{0.02\textwidth}\end{column} % Empty spacer column
+
+
+\begin{column}{0.46\textwidth} % The first column
+
+	\begin{exampleblock}{main points}
+		\textbf{lorem ipsum} \\
+\vspace{1cm}
+		\textbf{main heading }:
+			\begin{itemize}
+		  \setlength{\itemindent}{18em}
+				\item subpoint 1
+				\item subpoint 2
+				\item subpoint 3
+				\item subpoint 4
+			\end{itemize} 
+	\end{exampleblock}
+
+
+\vspace{1cm}
+
+	\begin{alertblock}{How about another section?}
+\bigskip
+\textbf{bold text} \\
+
+\[ A_{(i,j)} = equation \]
+
+\bigskip
+
+		\begin{figure}
+%			\includegraphics[width=\linewidth]{figures/.pdf}
+			\caption{ \ caption for the figure}
+		\end{figure}
+	\end{alertblock}
+
+
+
+
+	\begin{block}{data}
+		\begin{itemize}
+		\setlength{\itemindent}{11em}
+			\item[abundance]: data source
+			\item[traits]: data source
+			\item[taxonomy]: data source
+		\end{itemize}
+
+		\begin{itemize}
+		\setlength{\itemindent}{11em}
+			\item[occurrence]: data source
+			\item[abundance]: data source
+			\item[traits]: data source
+		\end{itemize}
+	\end{block}
+
+
+\vspace{2cm}
+
+
+	\begin{alertblock}{another section}
+		\begin{itz}
+		\setlength{\itemindent}{8em}
+			\item[someText]: some other text
+			\item[someText]: some other text
+			\item[someText]: some other text
+			\item[someText]: some other text						
+		\end{itz}
+	\end{alertblock}
+
+\end{column} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{column}{0.02\textwidth}\end{column} % Empty spacer column
+
+\begin{column}{0.46\textwidth} 
+
+	\begin{alertblock}{Yet another section }
+		\begin{figure}
+%			\includegraphics[width=\linewidth]{figures/corHist_panel.pdf}
+			\caption{ \ caption of your second figure }
+		\end{figure}
+	\end{alertblock}
+
+
+
+
+	\begin{alertblock}{one more results section?}
+		\begin{figure}
+%			\includegraphics[width=\linewidth]{figures/}
+			\caption{ \ caption of third figure }
+		\end{figure}
+	\end{alertblock}
+
+
+\vspace{0.24cm}
+	\begin{block}{in case you were wondering...}
+some important info.
+
+
+
+	\end{block}
+\end{column} 
+
+
+
+\begin{column}{0.02\textwidth}\end{column} % Empty spacer column
+\end{columns} 
+
+{\Huge \faThumbsOUp} This template is free to use, modify, and build on. \textcolor{uscRed}{Thank you!}  
+
+\end{frame} 
+
+
+\end{document}
